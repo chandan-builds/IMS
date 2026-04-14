@@ -1,0 +1,64 @@
+/* frontend/src/styles/theme.css */
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #4F46E5;
+  --color-primary-hover: #4338CA;
+  --color-primary-light: #EEF2FF;
+  --color-primary-dark: #3730A3;
+
+  --color-secondary: #0EA5E9;
+  --color-secondary-hover: #0284C7;
+
+  --color-accent: #F59E0B;
+
+  --color-success: #10B981;
+  --color-success-light: #D1FAE5;
+  --color-warning: #F59E0B;
+  --color-warning-light: #FEF3C7;
+  --color-danger: #EF4444;
+  --color-danger-light: #FEE2E2;
+  --color-info: #3B82F6;
+  --color-info-light: #DBEAFE;
+
+  --color-bg-page: #F8FAFC;
+  --color-bg-card: #FFFFFF;
+  --color-bg-sidebar: #1E293B;
+  --color-bg-hover: #F1F5F9;
+  --color-border: #E2E8F0;
+  --color-border-focus: #4F46E5;
+
+  --color-text-primary: #0F172A;
+  --color-text-secondary: #475569;
+  --color-text-muted: #94A3B8;
+  --color-text-inverse: #FFFFFF;
+
+  --color-stock-ok: #10B981;
+  --color-stock-low: #F59E0B;
+  --color-stock-out: #EF4444;
+  --color-stock-negative: #DC2626;
+
+  --font-sans: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+/* ── Dark Mode Override ── */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg-page: #0F172A;
+    --color-bg-card: #1E293B;
+    --color-bg-sidebar: #0F172A;
+    --color-bg-hover: #334155;
+    --color-border: #334155;
+    --color-border-focus: #818CF8;
+
+    --color-text-primary: #F1F5F9;
+    --color-text-secondary: #94A3B8;
+    --color-text-muted: #64748B;
+
+    --color-primary: #818CF8;
+    --color-primary-hover: #6366F1;
+    --color-primary-light: #1E1B4B;
+  }
+}
